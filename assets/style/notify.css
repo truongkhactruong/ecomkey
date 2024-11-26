@@ -1,0 +1,38 @@
+.notify {
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  right: 0.8125rem;
+  bottom: 0rem;
+}
+.notify-banner {
+  background: url(../images/notify/Banner.png) no-repeat center center;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  right: 0.8125rem;
+  bottom: 4.75rem;
+  border-radius: 50%;
+  display: none;
+}
+.notify-banner.active {
+  display: block;
+}
+.notify-btn {
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 3.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  border: none;
+  display: none;
+}
+@media (max-width: 576px) {
+  .notify-btn {
+    display: flex;
+  }
+}

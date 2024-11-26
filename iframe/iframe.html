@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe</title>
+    <link rel="stylesheet" href="./iframe.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="" class="back-to-product">
+          Helthfit - Psychology Therapy & Counseling WordPress Theme
+        </a>
+        <div class="devices-wrapper">
+          <button class="device-btn device-btn_smartphone" id="mobileBtn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              class="device-btn-icon"
+            >
+              <path
+                fill="#8a94a4"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.667 6.667H14a.667.667 0 010-1.334h2.667a.667.667 0 010 1.334zm0 18.666H14A.667.667 0 0114 24h2.667a.667.667 0 010 1.333zM10 4c-.367 0-.667.3-.667.667V26c0 .367.3.667.667.667h10.667c.366 0 .666-.3.666-.667V4.667c0-.367-.3-.667-.666-.667H10zm10.667 24H10c-1.103 0-2-.897-2-2V4.667c0-1.103.897-2 2-2h10.667c1.102 0 2 .897 2 2V26c0 1.103-.898 2-2 2z"
+              ></path>
+            </svg>
+          </button>
+          <button class="device-btn device-btn_tablet" id="tabletBtn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              class="device-btn-icon"
+            >
+              <path
+                fill="#8a94a4"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.667 6.667H14a.667.667 0 010-1.334h2.667a.667.667 0 010 1.334zm0 18.666H14A.667.667 0 0114 24h2.667a.667.667 0 010 1.333zM7.333 4c-.366 0-.666.3-.666.667V26c0 .367.3.667.667.667h16c.366 0 .666-.3.666-.667V4.667C24 4.3 23.7 4 23.334 4h-16zm16 24h-16c-1.102 0-2-.897-2-2V4.667c0-1.103.898-2 2-2h16c1.103 0 2 .897 2 2V26c0 1.103-.897 2-2 2z"
+              ></path>
+            </svg>
+          </button>
+          <button class="device-btn device-btn_destop" id="desktopBtn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              class="device-btn-icon"
+            >
+              <path
+                fill="#8a94a4"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.389 20.176H28V4.78a.701.701 0 00-.694-.704H5.083a.701.701 0 00-.694.704v15.395zm0 1.407v.704c0 .387.312.703.694.703h22.223a.701.701 0 00.694-.703v-.704H4.389zm8.53 5.01h6.552l-1.042-2.195h-4.47l-1.04 2.195zM20.36 28h-8.333a.695.695 0 01-.549-.27.715.715 0 01-.125-.604l1.172-2.728H5.083C3.935 24.398 3 23.45 3 22.287V4.78c0-1.164.935-2.111 2.083-2.111h22.223c1.148 0 2.083.947 2.083 2.11v17.507c0 1.164-.935 2.11-2.083 2.11h-7.444l1.173 2.73a.715.715 0 01-.125.603.695.695 0 01-.549.27z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="header-buttons">
+          <button class="header-btn header-btn_cart">
+            <img src="./frame_img/add-to-cart.svg" alt="" />
+            <span>Add To Cart</span>
+          </button>
+          <div class="header-button header_cart-demo cart-button"></div>
+        </div>
+      </div>
+    </header>
+    <div class="iframe-container">
+      <iframe
+        id="responsiveIframe"
+        src="https://ecomkey.asia/vi/"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Set iframe to default screen size based on the current window size
+        function setIframeDefaultSize() {
+          var windowWidth = $(window).width();
+          var windowHeight = $(window).height();
+          $("#responsiveIframe").css({
+            width: windowWidth + "px",
+            height: windowHeight + "px",
+          });
+          activateButtonBasedOnSize(windowWidth); // Activate button based on default screen size
+        }
+
+        // Function to activate the right button based on screen width
+        function activateButton(buttonClass) {
+          $(".device-btn").removeClass("active"); // Remove active class from all buttons
+          $(buttonClass).addClass("active"); // Add active class to the selected button
+        }
+
+        // Function to activate button based on current iframe size
+        function activateButtonBasedOnSize(width) {
+          if (width <= 375) {
+            activateButton(".device-btn_smartphone"); // Activate smartphone button
+          } else if (width <= 768) {
+            activateButton(".device-btn_tablet"); // Activate tablet button
+          } else {
+            activateButton(".device-btn_destop"); // Activate desktop button
+          }
+        }
+
+        // Call the function to set the default iframe size on page load
+        setIframeDefaultSize();
+
+        // Set iframe size for Mobile
+        $("#mobileBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "375px", // Mobile width
+            height: "667px", // Mobile height
+          });
+          activateButton(".device-btn_smartphone");
+        });
+
+        // Set iframe size for Tablet
+        $("#tabletBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "768px", // Tablet width
+            height: "1024px", // Tablet height
+          });
+          activateButton(".device-btn_tablet");
+        });
+
+        // Set iframe size for Desktop
+        $("#desktopBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "100vw", // Desktop width
+            height: "100vh", // Desktop height
+          });
+          activateButton(".device-btn_destop");
+        });
+
+        // Optionally, resize iframe when window is resized
+        $(window).resize(function () {
+          var windowWidth = $(window).width();
+          setIframeDefaultSize();
+          activateButtonBasedOnSize(windowWidth); // Recheck active button when resizing
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+.contact-info__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.contact-info__items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.contact-info__item {
+  display: flex;
+  gap: 1rem;
+}
+.contact-info__item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 625rem;
+  background: var(--primary-color);
+  flex-shrink: 0;
+}
+.contact-icon image {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.contact__form {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #eaedf0;
+}
+.contact__form-content {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.contact__form-item {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+}
+.input-wrap input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #cfd6dd;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: #7e8c9a;
+  font-feature-settings: "liga" off, "clig" off;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Body/medium */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 1.5rem; /* 171.429% */
+  letter-spacing: 0.0175rem;
+}
+.text-input {
+  height: 1.5rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: var(--sds-size-stroke-border) solid #cfd6dd;
+  background-color: var(--color-light);
+}
+.contact__form-btn {
+  display: flex;
+  height: 3rem;
+  padding: 0rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 625rem;
+  background: var(--primary-color);
+  box-shadow: 0px 2px 8px 3px rgba(31, 100, 255, 0.24);
+  border: none;
+  color: var(--color-light);
+}
+.google-map-widget {
+  height: 22.75rem;
+  max-width: 37rem;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  order: 1;
+}
+.contact-map {
+  width: 45.14rem;
+  height: 28.05831rem;
+  top: -2.5rem;
+  left: -4rem;
+  flex-shrink: 0;
+  background: url("../../assets/images/image.png") lightgray 50% / cover
+    no-repeat;
+  position: absolute;
+}
+.location {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 1.30681rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+}
+.zoom-control {
+  position: absolute;
+  bottom: 0rem;
+  right: 0.5rem;
+  flex-shrink: 0;
+}
+.zoom-control img {
+  width: 2.5rem;
+  height: 5.0625rem;
+  flex-shrink: 0;
+}
+.mini-map {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+}
+.direction {
+  width: 18.875rem;
+  height: 7.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem;
+}
+/* Container for the map */
+.map-container {
+  position: relative;
+  width: 600px; /* Chiều rộng của bản đồ */
+  height: 400px; /* Chiều cao của bản đồ */
+  overflow: hidden; /* Ẩn các phần bị cắt */
+  border: 2px solid #ddd; /* Khung xung quanh bản đồ */
+}
+
+/* Styling for the map image */
+.zoom-map {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng mượt mà khi zoom */
+}
+
+/* Thu phóng bản đồ khi hover */
+.map-container:hover .zoom-map {
+  transform: scale(1.2); /* Phóng to bản đồ lên 1.2 lần */
+  cursor: zoom-in; /* Thay đổi con trỏ chuột */
+}
+.direction {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.direction-info {
+  display: flex;
+  gap: 1rem;
+}
+.direction-icon {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+}
+.direction-icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+/* .direction-info a {
+  text-align: center;
+} */
+.direction-title--head {
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.direction-title--content {
+  color: #5b5b5b;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.direction a {
+  color: #3a84df;
+
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 576px) {
+  .contact__form-item {
+    flex-direction: column;
+  }
+}

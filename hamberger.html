@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/base.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style/footer.css" />
+    <link rel="stylesheet" href="./assets/style/header.css" />
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+    <link rel="stylesheet" href="./assets/style/session.css" />
+    <link rel="stylesheet" href="./assets/style/content.css" />
+    <link rel="stylesheet" href="./assets/style/banner.css" />
+    <link rel="stylesheet" href="./assets/style/test.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Web_Store</title>
+    <script src="./assets/js/content.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/banner.js"></script>
+    <script src="./assets/js/content/image-scroll.js"></script>
+  </head>
+  <style>
+    /* Container cho select box */
+    .custom-select-container {
+    }
+
+    /* Wrapper cho custom select */
+    .custom-select-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    /* Tùy chỉnh select */
+    .custom-select {
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .custom-select-trigger {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .custom-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      z-index: 99;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-option {
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .custom-option:hover {
+      background-color: #f0f0f0;
+    }
+
+    .custom-option.selected {
+      background-color: #ddd;
+    }
+
+    /* Tùy chỉnh khi mở */
+    .custom-select.open .custom-options {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const intervalDurationMs = 10000; // Interval duration set in milliseconds
+      const intervalDurationSec = intervalDurationMs / 1000; // Convert milliseconds to seconds for CSS animation
+
+      const sliders = document.querySelectorAll(".slider-customers");
+
+      sliders.forEach((slider) => {
+        const slides = slider.querySelectorAll(".content--six__card");
+        const sliderContainer = slider.querySelector(
+          ".slider-customers-container"
+        );
+        const paginationContainer = slider.querySelector(
+          ".slider__pagination__points"
+        );
+        const sliderWrapper = slider.querySelector(".slider-customers-wrapper");
+        const btnPrev = slider.querySelector(".btn-prev");
+        const btnNext = slider.querySelector(".btn-next");
+        let currentIndex = 0;
+        let autoScrollInterval;
+
+        // Create pagination buttons
+        slides.forEach((slide, index) => {
+          const button = document.createElement("button");
+          button.classList.add("slider__pagination__point");
+          button.setAttribute("id", `${slider.id}__slide${index}__button`);
+
+          // Set the first button and slide active
+          if (index === 0) {
+            button.classList.add("active");
+            slide.classList.add("active");
+          }
+
+          paginationContainer.appendChild(button);
+        });
+
+        const paginationButtons = paginationContainer.querySelectorAll(
+          ".slider__pagination__point"
+        );
+
+        function goToSlide(index, fromAutoScroll) {
+          // Remove class 'active' from every button and slides
+          paginationButtons.forEach((btn) => btn.classList.remove("active"));
+          slides.forEach((slide) => slide.classList.remove("active"));
+
+          // Add class 'active' to current button and to the associated slide
+          paginationButtons[index].classList.add("active");
+          slides[index].classList.add("active");
+
+          // Scroll to the slide
+          const offsetLeft = slides[index].offsetLeft;
+          sliderWrapper.scrollTo({
+            left: offsetLeft,
+            behavior: "smooth",
+          });
+
+          currentIndex = index;
+
+          // Add class 'timer' if autoScroll is active
+          if (fromAutoScroll) {
+            paginationButtons[currentIndex].classList.add("timer");
+          }
+        }
+
+        function startAutoScroll() {
+          autoScrollInterval = setInterval(() => {
+            let nextIndex = currentIndex + 1;
+            if (nextIndex >= slides.length) {
+              nextIndex = 0;
+            }
+            goToSlide(nextIndex, true);
+          }, intervalDurationMs);
+        }
+
+        function stopAutoScroll() {
+          clearInterval(autoScrollInterval);
+          paginationButtons[currentIndex].classList.remove("timer");
+        }
+
+        // Pagination buttons click event
+        paginationButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            stopAutoScroll();
+            goToSlide(index, false);
+          });
+        });
+
+        // Previous button click event
+        btnPrev.addEventListener("click", function () {
+          stopAutoScroll();
+          let prevIndex = currentIndex - 1;
+          if (prevIndex < 0) {
+            prevIndex = slides.length - 1;
+          }
+          goToSlide(prevIndex, false);
+        });
+
+        // Next button click event
+        btnNext.addEventListener("click", function () {
+          stopAutoScroll();
+          let nextIndex = currentIndex + 1;
+          if (nextIndex >= slides.length) {
+            nextIndex = 0;
+          }
+          goToSlide(nextIndex, false);
+        });
+
+        // Event-Listener for scrolling with mouse
+        sliderWrapper.addEventListener("wheel", function () {
+          stopAutoScroll(); // Stop timer on mouse scroll
+
+          let newActiveIndex = currentIndex;
+          let minDifference = Number.MAX_VALUE;
+
+          // Detect which slide is currently active
+          slides.forEach((slide, index) => {
+            const difference = Math.abs(
+              slide.offsetLeft - sliderWrapper.scrollLeft
+            );
+            if (difference < minDifference) {
+              minDifference = difference;
+              newActiveIndex = index;
+            }
+          });
+
+          // Update classes on new active slide
+          if (newActiveIndex !== currentIndex) {
+            paginationButtons[currentIndex].classList.remove("active");
+            slides[currentIndex].classList.remove("active");
+
+            currentIndex = newActiveIndex;
+            paginationButtons[currentIndex].classList.add("active");
+            slides[currentIndex].classList.add("active");
+          }
+        });
+
+        // Initial Start of AutoScroll
+        startAutoScroll();
+      });
+    });
+  </script>
+  <body>
+    <div class="container">
+      <section class="content--six__cards">
+        <div class="slider-customers" id="slider-customers">
+          <div class="slider-customers-wrapper">
+            <div class="slider-customers-container">
+              <div class="content--six__card">
+                <div class="content--six__card-header">
+                  <div class="content--six__card-header-img">
+                    <img src="./assets/images/content/Ellipse1.png" alt="" />
+                  </div>
+                  <div class="content--six__card-header-info">
+                    <div class="content--six__card-header-profile">
+                      <p class="content--six__card-header-name">
+                        Nguyễn Thị Hương
+                      </p>
+                      <p class="content--six__card-header-position">
+                        CEO - Công ty TNHH ABC
+                      </p>
+                    </div>
+                    <div class="content--six__card-header-rating">
+                      <div class="card-header-rating-poit">4.5</div>
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content--six__card-content">
+                  “wow...iam very happy to use this vpn,it turned out to be more
+                  than my expectations and so far there have been no problems.
+                  laslesvpn always the best”.
+                </div>
+              </div>
+              <div class="content--six__card">
+                <div class="content--six__card-header">
+                  <div class="content--six__card-header-img">
+                    <img src="./assets/images/content/Ellipse1.png" alt="" />
+                  </div>
+                  <div class="content--six__card-header-info">
+                    <div class="content--six__card-header-profile">
+                      <p class="content--six__card-header-name">
+                        Nguyễn Thị Hương
+                      </p>
+                      <p class="content--six__card-header-position">
+                        CEO - Công ty TNHH ABC
+                      </p>
+                    </div>
+                    <div class="content--six__card-header-rating">
+                      <div class="card-header-rating-poit">4.5</div>
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content--six__card-content">
+                  “wow...iam very happy to use this vpn,it turned out to be more
+                  than my expectations and so far there have been no problems.
+                  laslesvpn always the best”.
+                </div>
+              </div>
+              <div class="content--six__card">
+                <div class="content--six__card-header">
+                  <div class="content--six__card-header-img">
+                    <img src="./assets/images/content/Ellipse1.png" alt="" />
+                  </div>
+                  <div class="content--six__card-header-info">
+                    <div class="content--six__card-header-profile">
+                      <p class="content--six__card-header-name">
+                        Nguyễn Thị Hương
+                      </p>
+                      <p class="content--six__card-header-position">
+                        CEO - Công ty TNHH ABC
+                      </p>
+                    </div>
+                    <div class="content--six__card-header-rating">
+                      <div class="card-header-rating-poit">4.5</div>
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content--six__card-content">
+                  “wow...iam very happy to use this vpn,it turned out to be more
+                  than my expectations and so far there have been no problems.
+                  laslesvpn always the best”.
+                </div>
+              </div>
+              <div class="content--six__card">
+                <div class="content--six__card-header">
+                  <div class="content--six__card-header-img">
+                    <img src="./assets/images/content/Ellipse1.png" alt="" />
+                  </div>
+                  <div class="content--six__card-header-info">
+                    <div class="content--six__card-header-profile">
+                      <p class="content--six__card-header-name">
+                        Nguyễn Thị Hương
+                      </p>
+                      <p class="content--six__card-header-position">
+                        CEO - Công ty TNHH ABC
+                      </p>
+                    </div>
+                    <div class="content--six__card-header-rating">
+                      <div class="card-header-rating-poit">4.5</div>
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="content--six__card-content">
+                  “wow...iam very happy to use this vpn,it turned out to be more
+                  than my expectations and so far there have been no problems.
+                  laslesvpn always the best”.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__pagination">
+            <div class="slider__pagination__points"></div>
+            <div class="slider__pagination-btns">
+              <div class="slider__pagination-btn btn-prev">
+                <img src="./assets/images/prev.svg" alt="" />
+              </div>
+              <div class="slider__pagination-btn btn-next">
+                <img src="./assets/images/next.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

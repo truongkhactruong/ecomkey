@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Iframe Layout</title>
+    <style>
+      /* Styling for the buttons */
+      .buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Styling for the iframe container */
+      .iframe-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Default iframe style */
+      iframe {
+        border: 2px solid #000;
+        width: 100%;
+        max-width: 1200px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <button id="mobileBtn">Mobile</button>
+      <button id="tabletBtn">Tablet</button>
+      <button id="desktopBtn">Desktop</button>
+    </div>
+
+    <div class="iframe-container">
+      <iframe
+        id="responsiveIframe"
+        src="https://www.example.com"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Set iframe size for Mobile
+        $("#mobileBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "375px", // Mobile width
+            height: "667px", // Mobile height
+          });
+        });
+
+        // Set iframe size for Tablet
+        $("#tabletBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "768px", // Tablet width
+            height: "1024px", // Tablet height
+          });
+        });
+
+        // Set iframe size for Desktop
+        $("#desktopBtn").click(function () {
+          $("#responsiveIframe").css({
+            width: "1024px", // Desktop width
+            height: "768px", // Desktop height
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

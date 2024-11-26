@@ -1,0 +1,115 @@
+.header {
+  align-items: center;
+  background: #b2d4f5;
+  display: flex;
+  left: 0;
+  padding: 0.75rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 0;
+  height: 60px;
+  gap: 1rem;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.back-to-product {
+  align-items: baseline;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  margin-right: 20px;
+  max-width: 45%;
+  min-width: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.devices-wrapper {
+  display: flex;
+  align-self: stretch;
+}
+.device-btn {
+  background-color: initial;
+  cursor: pointer;
+  border: none;
+}
+.device-btn.active path {
+  fill: #ffffff;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.header-btn {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 20px;
+  white-space: nowrap;
+  border: none;
+}
+.header-btn,
+.header-buttons {
+  align-items: center;
+  display: flex;
+}
+
+.header-btn_cart {
+  background: #31af36;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header-btn_cart img {
+  width: 24px;
+  height: 24px;
+}
+.header-btn_membership {
+  background: #fff;
+  color: #243238;
+}
+
+.iframe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iframe-container iframe::-webkit-scrollbar {
+  width: 29px; /* Độ rộng của scrollbar */
+}
+iframe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+iframe::-webkit-scrollbar-thumb {
+  background-color: #2f4ae2; /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo tròn các góc của thanh cuộn */
+}
+
+@media (max-width: 768px) {
+  .device-btn_destop {
+    display: none;
+  }
+  .header-btn_cart span {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .device-btn_smartphone {
+    display: none;
+  }
+  .device-btn_tablet {
+    display: none;
+  }
+  .header-btn_membership {
+    display: none;
+  }
+}

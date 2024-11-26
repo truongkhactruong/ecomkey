@@ -1,0 +1,962 @@
+[
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20.000",
+    "old_price": "25.000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 1",
+    "title": "Sample Title 1",
+    "description": "This is a sample description.",
+    "price": "20000",
+    "old_price": "25000"
+  },
+  {
+    "image": "./assets/images/content-card-img1.png",
+    "name": "Product 2",
+    "title": "Sample Title 2",
+    "description": "This is another sample description.",
+    "price": "30000",
+    "old_price": "35000"
+  }
+]
