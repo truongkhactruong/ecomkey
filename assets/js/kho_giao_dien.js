@@ -129,7 +129,9 @@ $(document).ready(function () {
 
     for (let i = start; i < end && i < totalCards; i++) {
       $("#content-cards__wrapper").append(`
+            
              <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center">
+             <a href='./chi_tiet_giao_dien.html'>
             <div class="content-card">
               <div class="content-card__img">
                 <img src="${cardsData[i].image}" alt="${cardsData[i].name}" />
@@ -144,7 +146,9 @@ $(document).ready(function () {
                 <button class="content-card__btn">Xem Mẫu Demo</button>
               </div>
             </div>
+            </a>
           </div>
+          
         `);
     }
   }
